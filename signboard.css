@@ -1,0 +1,52 @@
+html {
+    background-color: transparent;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#framebox {
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* filter: hue-rotate(200deg) brightness(150%); */
+}
+
+#textBox {
+    height: 10vw;
+    white-space : nowrap;
+    font-family: 'Gill Sans';
+    font-weight: 700;
+    font-size: 8vw;
+
+    background: url(pattern.png) 0 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textGlow {
+    filter: blur(0.9px);
+}
+
+.skew {
+    transform: skewY(-26.5deg);
+}
+
+.mask {
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    -webkit-mask-image: url(pattern.png);
+    mask-image: url(pattern.png);
+}
