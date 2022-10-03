@@ -40,7 +40,7 @@ html, body {
 }
 
 .skew {
-    transform: skewY(-26.5deg);
+    transform: skewY(0deg);
 }
 
 .mask {
