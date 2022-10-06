@@ -12,6 +12,9 @@
         </div>
     </div>
     <script>
+        const $parentDocument = window.parent.document;
+        const $contentDiv = $parentDocument.querySelector('.dom-container .content');
+        $contentDiv.style.backgroundColor = "transparent";
 //         window.frameElement.parent.style.backgroundColor = "transparent";
 //         var test = window.frameElement.parent.tagName
 //         var textString = test;
